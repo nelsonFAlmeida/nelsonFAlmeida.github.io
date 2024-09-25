@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cidade</title>
+</head>
+
+<body>
+    <header>
+        <h1>Milão</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="local.html">Localização</a>
+            <a href="multimedia.html">Multimédia</a>
+            <a href="info.html">Informação</a>
+            <a href="quizz.html">Quizz</a>
+            <a href="viagem.html">Viagem</a>
+        </nav>
+        <img src="images/milaocapa.jpg" alt="duomo">
+    </header>
+    <main>
+        <fieldset>
+            <legend>Quizz viagem para Milão</legend><br>
+            <label for="nome">Nome:</label>
+            <input id="nome" type="text" placeholder="Insira o seu nome" required autofocus><br><br>
+
+            <label for="apelido">Apelido:</label>
+            <input id="apelido" type="text" placeholder="Insira o seu apelido" required><br><br>
+
+            <label for="email">Email:</label>
+            <input id="email" type="email" placeholder="nome@exemplo.com" autocomplete="on" required><br><br>
+
+            <label for="partida">Data de partida:</label>
+            <input id="partida" type="date" required><br><br>
+
+            <label for="regresso">Data de regresso:</label>
+            <input id="regresso" type="date" required><br><br>
+
+            <label for="passageiros">Número de passageiros?</label>
+            <input id="passageiros" type="number" min="1" max="50" step="1" required><br><br>
+
+            <label>Meios de transporte</label><br>
+            <input type="checkbox" id="carro" name="transporte" value="carro">
+            <label for="carro">Carro</label><br>
+            <input type="checkbox" id="comboio" name="transporte" value="comboio">
+            <label for="comboio">Comboio</label><br>
+            <input type="checkbox" id="avião" name="transporte" value="avião">
+            <label for="avião">Avião</label><br>
+            <input type="checkbox" id="outros" name="transporte" value="outros">
+            <label for="outros">Outros</label><br><br>
+
+            <label>Qual o serviço que deseja na sua viagem: básico ou premium?</label><br>
+            <input type="radio" id="basic" name="servico" value="basic" required>
+            <label for="basic">Básico </label><br>
+            <input type="radio" id="premium" name="servico" value="premium">
+            <label for=premium">Premium</label><br><br>
+
+
+        </fieldset>
+    </main>
+    <footer>
+        <p>DIW 2024</p>
+    </footer>
+</body>
+
+</html>
