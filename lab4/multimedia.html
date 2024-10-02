@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cidade</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
@@ -18,15 +19,18 @@
             <a href="quizz.html">Quizz</a>
             <a href="viagem.html">Viagem</a>
         </nav>
-        <img src="images/milaocapa.jpg" alt="duomo">
     </header>
     <main>
-        <h2>Multimédia</h2>
-        <p>
-            <a href="#fotos">Fotografias</a>
-            <a href="#video">Video</a>
-            <a href="#poema">Poema</a>
-        </p>
+        <div>
+            <nav class="multimedianav">
+                <h2>Multimédia</h2>
+                <p>
+                    <a href="#fotos">Fotografias</a>
+                    <a href="#video">Video</a>
+                    <a href="#poema">Poema</a>
+                </p>
+            </nav>
+        </div>
         <section id="fotos">
             <h3>Fotografias</h3>
             <a href="images/grande (1).jpg" target="fotoGrande">
@@ -38,8 +42,8 @@
             <a href="images/grande (3).jpg" target="fotoGrande">
                 <img src="images/navigli.jpg" alt="navigli">
             </a>
-            <br>
-            <iframe name="fotoGrande" width="800" height="600" src="images/grande (1).jpg"></iframe>
+            
+            <iframe id="fotoGrande" name="fotoGrande" width="90%" height="400" src="images/grande (1).jpg"></iframe>
         </section>
         <section id="video">
             <h3>Video</h3>

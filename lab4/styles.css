@@ -1,0 +1,161 @@
+* {
+    font-family: 'proxima-nova', sans-serif;
+}
+
+header {
+ background-color: #27374D;
+ color: white;
+ margin: 0;
+ padding: 0;
+}
+
+h1 {
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+header nav {
+    background-color: #526D82;
+    padding: 20px;
+    text-align: center;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin-inline: 5px;
+}
+
+
+nav a:hover  {
+    background-color: #ddd;
+}
+
+main {
+    background-color: #DDE6ED;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    background-color: #526D82;
+    color: white;
+}
+
+body {
+    background-color: #DDE6ED;
+    margin: 0;
+    padding: 0;
+}
+
+footer p {
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+#fotoGrande {
+    border: none;
+}
+
+h2 {
+    color:#27374D;
+    margin-left: 10px;
+    font-weight: bold;
+    margin-top: 0;
+    padding: 10px;
+    padding-bottom: 0px;
+    
+}
+
+main p {
+    color: #27374D;
+    text-align: justify;
+    margin-left: 20px;
+}
+
+h3 {
+    color:#27374D;
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+main pre {
+    color: #27374D;
+    text-align: justify;
+    margin-left: 20px;
+}
+
+.multimedianav {
+    text-align: left;
+    background-color: #9DB2BF;
+}
+
+.multimedianav a {
+    text-align: left;
+    color: white;
+    text-decoration: none;
+    margin-inline: 5px;
+
+}
+
+.multimedianav p {
+    text-align: left;
+    padding-bottom: 10px;
+    
+}
+
+iframe {
+    padding-left: 20px;
+}
+
+#fotos img {
+    border: 05px solid #abbfce;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+#fotos img:hover {
+opacity: 50%;
+}
+
+fieldset legend {
+    font-weight: bold;
+    padding: 10px;
+}
+
+fieldset {
+    margin: 10px;
+}
+
+#submit {
+    margin: 10px;
+    margin-top: 0;
+    margin-left: 20px;
+}
+
+table {
+    margin-left: 20px;
+}
+
+label {
+    font-size: small;
+}
+
+input {
+    font-size: medium;
+}
+
+label, input {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#iframelocal {
+    margin-bottom: 10px;
+}

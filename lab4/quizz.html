@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quizz sobre Milão</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
@@ -18,7 +19,6 @@
             <a href="quizz.html">Quizz</a>
             <a href="viagem.html">Viagem</a>
         </nav>
-        <img src="images/milaocapa.jpg" alt="duomo">
     </header>
 
     <main>
@@ -28,13 +28,13 @@
                 <fieldset>
                     <legend>Dados Pessoais</legend>
                     <label for="nome">Nome:</label>
-                    <input id="nome" type="text" placeholder="Insira o seu nome" required autofocus><br><br>
+                    <input id="nome" type="text" placeholder="Insira o seu nome" required autofocus>
 
                     <label for="apelido">Apelido:</label>
-                    <input id="apelido" type="text" placeholder="Insira o seu apelido" required><br><br>
+                    <input id="apelido" type="text" placeholder="Insira o seu apelido" required>
 
                     <label for="email">Email:</label>
-                    <input id="email" type="email" placeholder="nome@exemplo.com" autocomplete="on" required><br><br>
+                    <input id="email" type="email" placeholder="nome@exemplo.com" autocomplete="on" required>
                 </fieldset>
 
                 <fieldset>
@@ -45,67 +45,67 @@
                             <input id="pergunta1" type="text" placeholder="Digite aqui a sua resposta" size="40"
                                 maxlength="100" required>
                         </li>
-                        <br>
+                        
 
                         <li>
-                            <label>Milão é conhecida como a capital de quê?</label><br>
+                            <label>Milão é conhecida como a capital de quê?</label>
                             <input type="radio" id="moda" name="pergunta2" value="Moda" required>
-                            <label for="moda">Moda</label><br>
+                            <label for="moda">Moda</label>
                             <input type="radio" id="cinema" name="pergunta2" value="Cinema">
-                            <label for="cinema">Cinema</label><br>
+                            <label for="cinema">Cinema</label>
                             <input type="radio" id="gastronomia" name="pergunta2" value="Gastronomia">
-                            <label for="gastronomia">Gastronomia</label><br>
+                            <label for="gastronomia">Gastronomia</label>
                         </li>
-                        <br>
+                        
 
                         <li>
                             <label>Quais destes monumentos estão em Milão? (Selecione todas as opções
-                                corretas)</label><br>
+                                corretas)</label>
                             <input type="checkbox" id="duomo" name="pergunta3" value="Duomo">
-                            <label for="duomo">Duomo de Milão</label><br>
+                            <label for="duomo">Duomo de Milão</label>
                             <input type="checkbox" id="coliseu" name="pergunta3" value="Coliseu">
-                            <label for="coliseu">Coliseu</label><br>
+                            <label for="coliseu">Coliseu</label>
                             <input type="checkbox" id="castelo" name="pergunta3" value="Castelo">
-                            <label for="castelo">Castelo Sforzesco</label><br>
+                            <label for="castelo">Castelo Sforzesco</label>
                         </li>
-                        <br>
+                        
 
                         <li>
                             <label for="pergunta4">Em que dia foi inaugurada a Expo Milão 2015?</label>
                             <input id="pergunta4" type="date" required>
                         </li>
-                        <br>
+                        
 
                         <li>
                             <label for="pergunta5">A que horas abre o Duomo de Milão?</label>
                             <input id="pergunta5" type="time" required>
                         </li>
-                        <br>
+                        
 
                         <li>
                             <label for="pergunta6">Escolha a cor da bandeira do AC Milan:</label>
                             <input id="pergunta6" type="color" value="#FF0000" required>
                         </li>
-                        <br>
+                        
 
                         <li>
                             <label for="pergunta7">Quantos degraus tem a escadaria do Duomo de Milão?</label>
                             <input id="pergunta7" type="number" min="1" max="500" step="1" required>
                         </li>
-                        <br>
+                        
 
                         <li>
                             <label for="pergunta8">De 0 a 100, quanto gosta de Milão?</label>
                             <input id="pergunta8" type="range" min="0" max="100" value="50" step="1">
                         </li>
-                        <br>
+                        
 
                         <li>
-                            <label for="pergunta9">Escolha a imagem que representa o Duomo de Milão:</label><br>
+                            <label for="pergunta9">Escolha a imagem que representa o Duomo de Milão:</label>
                             <input id="pergunta9" type="image" src="images/milaocapa.jpg" alt="Duomo de Milão">
                             <input id="pergunta9" type="image" src="images/navigli.jpg" alt="Navigli">
                         </li>
-                        <br>
+                        
 
                         <li>
                             <input type="reset" value="Limpar Respostas">

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cidade</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
@@ -18,47 +19,47 @@
             <a href="quizz.html">Quizz</a>
             <a href="viagem.html">Viagem</a>
         </nav>
-        <img src="images/milaocapa.jpg" alt="duomo">
     </header>
     <main>
+        <h2>Viagem</h2>
         <fieldset>
-            <legend>Quizz viagem para Milão</legend><br>
+            <legend>Quizz viagem para Milão</legend>
             <label for="nome">Nome:</label>
-            <input id="nome" type="text" placeholder="Insira o seu nome" required autofocus><br><br>
+            <input id="nome" type="text" placeholder="Insira o seu nome" required autofocus>
 
             <label for="apelido">Apelido:</label>
-            <input id="apelido" type="text" placeholder="Insira o seu apelido" required><br><br>
+            <input id="apelido" type="text" placeholder="Insira o seu apelido" required>
 
             <label for="email">Email:</label>
-            <input id="email" type="email" placeholder="nome@exemplo.com" autocomplete="on" required><br><br>
+            <input id="email" type="email" placeholder="nome@exemplo.com" autocomplete="on" required>
 
             <label for="partida">Data de partida:</label>
-            <input id="partida" type="date" required><br><br>
+            <input id="partida" type="date" required>
 
             <label for="regresso">Data de regresso:</label>
-            <input id="regresso" type="date" required><br><br>
+            <input id="regresso" type="date" required>
 
             <label for="passageiros">Número de passageiros?</label>
-            <input id="passageiros" type="number" min="1" max="50" step="1" required><br><br>
+            <input id="passageiros" type="number" min="1" max="50" step="1" required>
 
-            <label>Meios de transporte</label><br>
+            <label>Meios de transporte</label>
             <input type="checkbox" id="carro" name="transporte" value="carro">
-            <label for="carro">Carro</label><br>
+            <label for="carro">Carro</label>
             <input type="checkbox" id="comboio" name="transporte" value="comboio">
-            <label for="comboio">Comboio</label><br>
+            <label for="comboio">Comboio</label>
             <input type="checkbox" id="avião" name="transporte" value="avião">
-            <label for="avião">Avião</label><br>
+            <label for="avião">Avião</label>
             <input type="checkbox" id="outros" name="transporte" value="outros">
-            <label for="outros">Outros</label><br><br>
+            <label for="outros">Outros</label>
 
-            <label>Qual o serviço que deseja na sua viagem: básico ou premium?</label><br>
+            <label>Qual o serviço que deseja na sua viagem: básico ou premium?</label>
             <input type="radio" id="basic" name="servico" value="basic" required>
-            <label for="basic">Básico </label><br>
+            <label for="basic">Básico </label>
             <input type="radio" id="premium" name="servico" value="premium">
-            <label for=premium">Premium</label><br><br>
+            <label for=premium">Premium</label>
 
-            <label>Pedidos especiais?</label><br>
-            <textarea name="pedidos-especiais" id="pedidos-especiais" cols="50" rows="10"></textarea><br><br>
+            <label>Pedidos especiais?</label>
+            <textarea name="pedidos-especiais" id="pedidos-especiais" cols="50" rows="10"></textarea>
 
             <label for="gastar">Qual o valor que espera gastar por pessoa e por dia na sua viagem?</label>
             <input id="gastar" type="number" min="1" max="5000" step="1" required>
