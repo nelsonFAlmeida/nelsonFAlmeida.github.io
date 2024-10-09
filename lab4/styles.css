@@ -3,10 +3,10 @@
 }
 
 header {
- background-color: #27374D;
- color: white;
- margin: 0;
- padding: 0;
+    background-color: #27374D;
+    color: white;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
@@ -31,7 +31,7 @@ header a {
 }
 
 
-nav a:hover  {
+nav a:hover {
     background-color: #ddd;
 }
 
@@ -63,13 +63,13 @@ footer p {
 }
 
 h2 {
-    color:#27374D;
+    color: #27374D;
     margin-left: 10px;
     font-weight: bold;
     margin-top: 0;
     padding: 10px;
     padding-bottom: 0px;
-    
+
 }
 
 main p {
@@ -79,7 +79,7 @@ main p {
 }
 
 h3 {
-    color:#27374D;
+    color: #27374D;
     margin-left: 15px;
     font-weight: bold;
 }
@@ -90,12 +90,12 @@ main pre {
     margin-left: 20px;
 }
 
-.multimedianav {
+main nav {
     text-align: left;
     background-color: #9DB2BF;
 }
 
-.multimedianav a {
+main nav a {
     text-align: left;
     color: white;
     text-decoration: none;
@@ -103,10 +103,10 @@ main pre {
 
 }
 
-.multimedianav p {
+main nav p {
     text-align: left;
     padding-bottom: 10px;
-    
+
 }
 
 iframe {
@@ -121,7 +121,7 @@ iframe {
 }
 
 #fotos img:hover {
-opacity: 50%;
+    opacity: 50%;
 }
 
 fieldset legend {
@@ -151,7 +151,8 @@ input {
     font-size: medium;
 }
 
-label, input {
+label,
+input {
     display: block;
     margin-bottom: 5px;
 }
