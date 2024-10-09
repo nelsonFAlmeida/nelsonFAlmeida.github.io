@@ -72,6 +72,10 @@ h2 {
 
 }
 
+main img {
+    margin-left: 20px;
+}
+
 main p {
     color: #27374D;
     text-align: justify;
