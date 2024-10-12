@@ -188,11 +188,10 @@ table th {
     font-size: 2em;
 }
 
-tr:nth-child(odd)  {
+tr:nth-child(odd) {
     background-color: #526D82;
 }
 
-tr:nth-child(even)  {
+tr:nth-child(even) {
     background-color: #9DB2BF;
 }
-

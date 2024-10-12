@@ -139,7 +139,7 @@ article#cidades section img {
 
 article#cidades section div {
     font-weight: bold;
-    border-radius: 0px 0px 8px 8px ;
+    border-radius: 0px 0px 8px 8px;
     width: 100px;
     height: 100%;
     background-color: #526D82;
@@ -159,34 +159,34 @@ article#cidades section div {
     width: 100px;
     height: 100px;
     background-color: #526D82;
-    border-radius: 50%; 
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 20px;
-    position: relative; 
-    overflow: hidden; 
+    position: relative;
+    overflow: hidden;
     color: #DDE6ED;
     transition: background-color 0.3s;
 }
 
 .circulo:hover {
-    background-color: #27374D; 
+    background-color: #27374D;
 }
 
 .hidden {
-    display: none; 
-    position: absolute; 
-    font-size: 24px; 
+    display: none;
+    position: absolute;
+    font-size: 24px;
     color: #DDE6ED;
 }
 
 .circulo:hover .hidden {
-    display: block; 
+    display: block;
 }
 
 .circulo-texto {
-    font-weight: bold; 
+    font-weight: bold;
 }
 
 footer {
