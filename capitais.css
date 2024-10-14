@@ -117,8 +117,8 @@ article#cidades {
     justify-content: center;
     align-items: center;
     width: 100vw;
-    padding: 20px;
     background-color: #9DB2BF;
+    padding: 5vw;
 }
 
 article#cidades section {
