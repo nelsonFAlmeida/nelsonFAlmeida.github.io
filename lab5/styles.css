@@ -157,11 +157,19 @@ input {
     font-size: medium;
 }
 
-label,
-input {
+label {
     display: block;
-    margin-bottom: 5px;
+    margin-top: 5px;
 }
+
+
+input {
+    display: inline;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+
 
 #iframelocal {
     margin-bottom: 10px;

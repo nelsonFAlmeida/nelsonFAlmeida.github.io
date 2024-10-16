@@ -15,6 +15,7 @@ h1 {
     text-align: center;
     font-size: 60px;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 header nav {
@@ -126,6 +127,7 @@ iframe {
 
 #fotos img:hover {
     opacity: 50%;
+    cursor: zoom-in;
 }
 
 fieldset legend {
@@ -155,12 +157,49 @@ input {
     font-size: medium;
 }
 
-label,
-input {
+label {
     display: block;
-    margin-bottom: 5px;
+    margin-top: 5px;
 }
+
+
+input {
+    display: inline;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+
 
 #iframelocal {
     margin-bottom: 10px;
+}
+
+main ol {
+    list-style-type: upper-roman;
+}
+
+main ol li:nth-child(2n) {
+    color: #526D82;
+}
+
+table {
+    margin: 20px;
+}
+
+
+table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    color: white;
+    font-size: 2em;
+}
+
+tr:nth-child(odd) {
+    background-color: #526D82;
+}
+
+tr:nth-child(even) {
+    background-color: #9DB2BF;
 }
