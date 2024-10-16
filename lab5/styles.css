@@ -1,15 +1,33 @@
 * {
     font-family: 'proxima-nova', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #DDE6ED;
+    margin: 0;
+    padding: 0;
+}
+
+label {
+    font-size: small;
+    display: block;
+    margin-top: 5px;
+}
+
+input {
+    font-size: medium;
+    display: inline;
+    margin: 10px 0 5px 0;
 }
 
 header {
     background-color: #27374D;
     color: white;
-    margin: 0;
-    padding: 0;
 }
 
-h1 {
+header h1 {
     margin: 0;
     padding: 20px;
     text-align: center;
@@ -31,7 +49,6 @@ header a {
     margin-inline: 5px;
 }
 
-
 nav a:hover {
     background-color: #ddd;
 }
@@ -42,15 +59,81 @@ main {
     padding: 0;
 }
 
+main h2 {
+    color: #27374D;
+    margin-left: 10px;
+    font-weight: bold;
+    margin-top: 0;
+    padding: 10px 10px 0 10px;
+}
+
+main h3 {
+    color: #27374D;
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+main p,
+main pre {
+    color: #27374D;
+    text-align: justify;
+    margin-left: 20px;
+}
+
+main img {
+    margin-left: 20px;
+}
+
+main nav {
+    text-align: left;
+    background-color: #9DB2BF;
+}
+
+main nav a {
+    color: white;
+    text-decoration: none;
+    margin-inline: 5px;
+}
+
+main nav p {
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+main ol {
+    list-style-type: upper-roman;
+}
+
+main ol li:nth-child(2n) {
+    color: #526D82;
+}
+
+#iframelocal {
+    margin-bottom: 10px;
+}
+
+table {
+    margin: 20px;
+}
+
+table th {
+    padding: 12px 0;
+    text-align: left;
+    color: white;
+    font-size: 2em;
+}
+
+tr:nth-child(odd) {
+    background-color: #526D82;
+}
+
+tr:nth-child(even) {
+    background-color: #9DB2BF;
+}
+
 footer {
     background-color: #526D82;
     color: white;
-}
-
-body {
-    background-color: #DDE6ED;
-    margin: 0;
-    padding: 0;
 }
 
 footer p {
@@ -63,63 +146,12 @@ footer p {
     border: none;
 }
 
-h2 {
-    color: #27374D;
-    margin-left: 10px;
-    font-weight: bold;
-    margin-top: 0;
-    padding: 10px;
-    padding-bottom: 0px;
-
-}
-
-main img {
-    margin-left: 20px;
-}
-
-main p {
-    color: #27374D;
-    text-align: justify;
-    margin-left: 20px;
-}
-
-h3 {
-    color: #27374D;
-    margin-left: 15px;
-    font-weight: bold;
-}
-
-main pre {
-    color: #27374D;
-    text-align: justify;
-    margin-left: 20px;
-}
-
-main nav {
-    text-align: left;
-    background-color: #9DB2BF;
-}
-
-main nav a {
-    text-align: left;
-    color: white;
-    text-decoration: none;
-    margin-inline: 5px;
-
-}
-
-main nav p {
-    text-align: left;
-    padding-bottom: 10px;
-
-}
-
 iframe {
     padding-left: 20px;
 }
 
 #fotos img {
-    border: 05px solid #abbfce;
+    border: 5px solid #abbfce;
     border-radius: 5px;
     margin-left: 20px;
     margin-bottom: 10px;
@@ -130,76 +162,15 @@ iframe {
     cursor: zoom-in;
 }
 
+fieldset {
+    margin: 10px;
+}
+
 fieldset legend {
     font-weight: bold;
     padding: 10px;
 }
 
-fieldset {
-    margin: 10px;
-}
-
 #submit {
-    margin: 10px;
-    margin-top: 0;
-    margin-left: 20px;
-}
-
-table {
-    margin-left: 20px;
-}
-
-label {
-    font-size: small;
-}
-
-input {
-    font-size: medium;
-}
-
-label {
-    display: block;
-    margin-top: 5px;
-}
-
-
-input {
-    display: inline;
-    margin-bottom: 5px;
-    margin-top: 10px;
-}
-
-
-
-#iframelocal {
-    margin-bottom: 10px;
-}
-
-main ol {
-    list-style-type: upper-roman;
-}
-
-main ol li:nth-child(2n) {
-    color: #526D82;
-}
-
-table {
-    margin: 20px;
-}
-
-
-table th {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: left;
-    color: white;
-    font-size: 2em;
-}
-
-tr:nth-child(odd) {
-    background-color: #526D82;
-}
-
-tr:nth-child(even) {
-    background-color: #9DB2BF;
+    margin: 10px 0 0 20px;
 }
