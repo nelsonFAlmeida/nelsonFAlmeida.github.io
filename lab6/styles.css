@@ -10,24 +10,225 @@
         display: grid;
         height: 100vh;
         grid-template-columns: 1fr;
-        grid-template-rows: 30vw 25vw 1fr 10vw 15vw;
+        grid-template-rows: 30vw 30vw 1fr 55vw 15vw;
         grid-template-areas: 'header' 'menu' 'main' 'aside' 'footer';
-  
-        background-color: rgb(6, 4, 116);
         padding: 10px;
     }
 
-    p, img {
-        width: 90vw;
+    p,
+    img {
+        width: 85vw;
     }
-
-
-
 
     ul li {
         display: inline-block;
+        width: 80vw;
+    }
+
+    aside {
+        width: 90vw;
+    }
+
+    aside p {
+        padding: 10px;
+        width: 80vw;
+    }
+
+    iframe {
+        width: 90vw;
+    }
+
+    #fotos img {
+        width: 20vw;
+        height: 15vh;
+        display: inline;
+    }
+
+    form {
+        width: 80vw;
+    }
+
+    form label {
+        width: 70vw;
+    }
+
+    input {
+        width: 30vw;
+    }
+
+    textarea {
+        width: 70vw;
+    }
+
+    table {
+        width: 70vw;
+
+    }
+
+    table th {
+        display: block;
+        box-sizing: border-box;
+    }
+
+    table tr {
+        display: block;
     }
 }
+
+@media (min-width: 600px) and (max-width: 900px) {
+    body {
+        display: grid;
+        height: auto;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            'header header'
+            'menu main'
+            'menu aside'
+            'footer footer';
+        padding: 10px;
+    }
+
+    header {
+        grid-area: header;
+        background-color: #27374D;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .menu {
+        grid-area: menu;
+        background-color: #526D82;
+        padding: 20px;
+        text-align: center;
+        color: white;
+        font-size: 18px;
+    }
+
+    main {
+        grid-area: main;
+        background-color: #DDE6ED;
+        padding: 20px;
+    }
+
+    aside {
+        grid-area: aside;
+        background-color: #F1F6F9;
+        padding: 20px;
+    }
+
+    footer {
+        grid-area: footer;
+        background-color: #526D82;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+
+    p,
+    img,
+    iframe {
+        width: 70vw;
+    }
+
+    #fotos img {
+        width: 10vw;
+        height: 10vh;
+        display: inline;
+
+    }
+
+    table {
+        width: 100%;
+        margin: 10px 0;
+        border-collapse: collapse;
+    }
+
+    table th,
+    table td {
+        padding: 8px;
+        text-align: left;
+    }
+}
+
+@media (min-width: 900px) {
+    body {
+        display: grid;
+        height: auto;
+        grid-template-columns: 1fr 3fr 1fr; /* 3 colunas: menu, main, aside */
+        grid-template-rows: auto;
+        grid-template-areas:
+            'header header header'
+            'menu main aside'
+            'footer footer footer';
+        padding: 10px;
+    }
+
+    header {
+        grid-area: header;
+        background-color: #27374D;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .menu {
+        grid-area: menu;
+        background-color: #526D82;
+        padding: 20px;
+        text-align: center;
+        color: white;
+        font-size: 18px;
+    }
+
+    main {
+        grid-area: main;
+        background-color: #DDE6ED;
+        padding: 20px;
+    }
+
+    main nav {
+        margin: 10px;
+        border-radius: 10px;
+    }
+
+    aside {
+        grid-area: aside;
+
+        text-align: justify;
+    }
+
+    aside p , h3{
+        width: 10vw;
+    }
+
+    footer {
+        grid-area: footer;
+        background-color: #526D82;
+        color: white;
+        text-align: center;
+    }
+
+    p,
+    img,
+    iframe {
+        width: 50vw;
+    }
+
+    
+    #fotos img {
+        width: 10vw;
+        height: 10vh;
+        display: inline;
+
+    }
+
+}
+
+
+
+
 
 header {
     grid-area: header;
@@ -52,9 +253,7 @@ h1 {
     color: white;
     text-decoration: none;
     font-size: 20px;
-
 }
-
 
 a {
     color: white;
@@ -62,7 +261,6 @@ a {
     font-size: 20px;
     margin-inline: 5px;
 }
-
 
 nav a:hover {
     background-color: #ddd;
@@ -77,6 +275,24 @@ main {
 
 aside {
     grid-area: aside;
+    background-color: #9DB2BF;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    color: #27374D;
+    font-size: 16px;
+}
+
+aside h3 {
+    font-size: 18px;
+    color: #526D82;
+    margin-bottom: 10px;
+}
+
+aside p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: justify;
 }
 
 footer {
@@ -109,7 +325,6 @@ h2 {
     margin-top: 0;
     padding: 10px;
     padding-bottom: 0px;
-
 }
 
 main img {
@@ -147,13 +362,11 @@ main nav a {
     color: white;
     text-decoration: none;
     margin-inline: 5px;
-
 }
 
 main nav p {
     text-align: left;
     padding-bottom: 10px;
-
 }
 
 iframe {
@@ -189,8 +402,39 @@ fieldset {
 }
 
 table {
-    margin-left: 20px;
+    width: 60%;
+    margin: 20px auto;
+    border-collapse: collapse;
 }
+
+table th {
+    padding: 10px 15px;
+    border: 1px solid #27374D;
+    text-align: left;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+table tr:nth-child(odd) {
+    background-color: #526D82;
+}
+
+table tr:nth-child(even) {
+    background-color: #9DB2BF;
+}
+
+table a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+table a:hover {
+    color: #27374D;
+}
+
+
 
 label {
     font-size: small;
@@ -204,9 +448,7 @@ label {
     display: block;
     margin-top: 5px;
     margin-left: 20px;
-    margin-left: 20px;
 }
-
 
 input {
     display: inline;
@@ -214,8 +456,6 @@ input {
     margin-top: 10px;
     margin-left: 20px;
 }
-
-
 
 #iframelocal {
     margin-bottom: 10px;
@@ -229,15 +469,10 @@ main ol li:nth-child(2n) {
     color: #526D82;
 }
 
-table {
-    margin: 20px;
-}
-
 textarea {
     margin-left: 20px;
     margin-top: 10px;
 }
-
 
 li {
     margin-left: 20px;
@@ -247,20 +482,4 @@ li {
 ul,
 ol {
     margin-left: 20px;
-}
-
-table th {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: left;
-    color: white;
-    font-size: 2em;
-}
-
-tr:nth-child(odd) {
-    background-color: #526D82;
-}
-
-tr:nth-child(even) {
-    background-color: #9DB2BF;
 }
