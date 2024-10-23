@@ -14,6 +14,7 @@
 
     }
 }
+
 /*
 @media (min-width: 600px) {
     body {
@@ -30,28 +31,28 @@
 
     }
 */
-    header {
-        grid-area: header;
-    }
-
-    section.interfaces {
-        grid-area: interfaces;
-    }
-
-    section.intro {
-        grid-area: intro;
-    }
-
-    section.labs {
-        grid-area: labs;
-    }
-
-    section.footer {
-        grid-area: footer;
-    }
-    
+header {
+    grid-area: header;
 }
-    
+
+section.interfaces {
+    grid-area: interfaces;
+}
+
+section.intro {
+    grid-area: intro;
+}
+
+section.labs {
+    grid-area: labs;
+}
+
+section.footer {
+    grid-area: footer;
+}
+
+}
+
 
 header {
     top: 0;
@@ -73,12 +74,12 @@ main {
 section {
     background-color: white;
     margin-top: 10px;
-    
+
 }
 
 section.interfaces {
     padding: 50px;
-    
+
 }
 
 section.interfaces h2 {
@@ -101,11 +102,11 @@ section.intro {
 }
 
 section.intro h3 {
-    margin: 10px;  
+    margin: 10px;
     font-weight: lighter;
 }
 
-section.intro ul{
+section.intro ul {
     margin-left: 50px;
 }
 
@@ -117,25 +118,25 @@ section.labs {
     padding: 50px;
 }
 
-section.labs div{
+section.labs div {
     align-content: center;
     text-align: center;
     margin: 10px;
     width: 100px;
     height: 50px;
     border-radius: 8px 8px 8px 8px;
-    
+
 }
 
-section.labs div:hover{
+section.labs div:hover {
     opacity: 50%;
 }
 
-section.labs div:nth-child(odd){
+section.labs div:nth-child(odd) {
     background-color: grey;
 }
 
-section.labs div:nth-child(even){
+section.labs div:nth-child(even) {
     background-color: lightgrey;
 }
 
