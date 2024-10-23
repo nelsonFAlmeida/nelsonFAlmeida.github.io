@@ -1,25 +1,100 @@
-body {
-    background-color: lightcyan;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-img {
-    height: 70%;
-    width: 70%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+header {
+    top: 0;
+    background-color: black;
+    padding: 10px;
 }
 
 h1 {
+    background-color: grey;
     text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    background-color: lightblue;
+    padding: 10px;
 }
 
-h2 {
-    text-align: left;
-    margin-top: 7px;
-    margin-bottom: 7px;
+main {
+    background-color: black;
+    padding: 10px;
+}
+
+section {
+    background-color: white;
+    margin-top: 10px;
+    
+}
+
+section.interfaces {
+    padding: 50px;
+    
+}
+
+section.interfaces h2 {
+    margin-bottom: 10px;
+}
+
+section.interfaces div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+section.interfaces img {
+    width: 50%;
+}
+
+section.intro {
+    padding: 25px;
+}
+
+section.intro h3 {
+    margin: 10px;  
+    font-weight: lighter;
+}
+
+section.intro ul{
+    margin-left: 50px;
+}
+
+section.labs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+section.labs div{
+    align-content: center;
+    text-align: center;
+    margin: 10px;
+    width: 100px;
+    height: 50px;
+    border-radius: 8px 8px 8px 8px;
+    
+}
+
+section.labs div:nth-child(odd){
+    background-color: grey;
+}
+
+section.labs div:nth-child(even){
     background-color: lightgrey;
+}
+
+footer {
+    top: 0;
+    background-color: black;
+    padding: 10px;
+}
+
+footer p {
+    background-color: grey;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 10px;
 }
