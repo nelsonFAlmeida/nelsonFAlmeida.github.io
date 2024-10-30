@@ -122,8 +122,12 @@ section.labs div {
     margin: 10px;
     width: 100px;
     height: 50px;
-    border-radius: 8px 8px 8px 8px;
+    border-radius: 8px 8px 8px 8px; 
+}
 
+section.labs a {
+    text-decoration: none;
+    color: black;
 }
 
 section.labs div:hover {
