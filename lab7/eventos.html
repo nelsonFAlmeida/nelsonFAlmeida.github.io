@@ -1,37 +1,41 @@
 <!DOCTYPE html>
-<html lang="pt-PT">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galeria de Arte Interativa</title>
-    <link rel="stylesheet" href="eventos.css">
 </head>
 <body>
-    <h1>Galeria de Arte Interativa</h1>
-    <div class="gallery-item">
-        <h2>Obra 1: A Noite Estrelada</h2>
-        <p>Autor: Vincent van Gogh</p>
-        <p class="description-gogh">Clique para alterar a descrição.</p>
-    </div>
+    <header>
+        <h1 id="titulo">Bem-vindo à Galeria de Arte Interativa</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="eventos.html">Eventos</a>
+            <a href="/index.html">Pagina Inicial</a>
+        </nav>
+    </header>
 
-    <div class="gallery-item">
-        <h2>Obra 2: O Grito</h2>
-        <p>Autor: Edvard Munch</p>
-        <p class="description-munch">Clique duas vezes para ver mais detalhes.</p>
-    </div>
+    <main>
+        <section class="galeria">
+            <h2 id="instrucao">Passe o mouse sobre a imagem ou clique para interagir</h2>
+            <img src="images/grande1.jpg" alt="arco" id="imagem-arte" style="width: 300px; height: 200px;">
+        </section>
 
-    <div class="gallery-item">
-        <h2>Obra 3: A Persistência da Memória</h2>
-        <p>Autor: Salvador Dalí</p>
-        <p>Passa o rato sobre este item.</p>
-    </div>
+        <section class="comentarios">
+            <h2>Deixe o seu comentário</h2>
+            <form id="form-comentario">
+                <label for="comentario">Comentário:</label>
+                <input type="text" id="comentario" name="comentario">
+                <button type="submit">Submeter</button>
+            </form>
+            <p id="resposta-formulario"></p>
+        </section>
 
-    <div class="gallery-item">
-        <h2>Obra 4: Mona Lisa</h2>
-        <p>Autor: Leonardo da Vinci</p>
-        <input type="text" placeholder="Escreva o seu comentário">
-        <p id="key-event"></p>
-    </div>
+        <section class="contador-teclas">
+            <h2>Contagem de teclas pressionadas</h2>
+            <p>Teclas pressionadas: <span id="contador-teclas">0</span></p>
+        </section>
+    </main>
 
     <script src="eventos.js"></script>
 </body>
