@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <title>LAB7</title>
+</head>
+
+<body>
+    <header>
+        <h1>1. Passa por aqui!</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="eventos.html">Eventos</a>
+            <a href="/index.html">Pagina Inicial</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <p id="pinta-me">2. Pinta-me!</p>
+            <button data-color="red" id="pintar">Red</button>
+            <button data-color="green" id="pintar">Green</button>
+            <button data-color="blue" id="pintar">Blue</button>
+        </section>
+        <section class="escrever">
+            <p>3. Exprimenta escrever...</p>
+            <input type="text" id="input-bg-color">
+        </section>
+        <section class="cor">
+            <p>4. Escolha uma cor:</p>
+            <select name="color-options" id="color-options">
+                <option value="white">White</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+                <option value="red">Red</option>
+            </select>
+        </section>
+        <section class="contar">
+            <p>5.</p>
+            <button>Conta!</button>
+            <p id="contador"></p>
+        </section>
+
+        <section class="nome-idade">
+            <p>6.</p>
+            <form id="form-comentario">
+                <input type="text" id="nome" name="nome" placeholder="Insira o seu nome">
+                <input type="text" id="idade" name="idade" placeholder="Insira a sua idade">
+                <button type="submit-nome-idade">Submeter</button>
+                <p id="adiciona-aqui"></p>
+            </form>
+        </section>
+
+        <section class="contador-letras">
+            <p>7.</p>
+            <p>Automatic Counter: <span id="contador-auto">0</span></p>
+        </section>
+
+
+    </main>
+    <footer>
+
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
