@@ -59,6 +59,11 @@ aside {
     color: white;
 }
 
+aside section {
+    padding-bottom: 10px;
+    color: black;
+}
+
 footer {
     background-color: lightgray;
 }
