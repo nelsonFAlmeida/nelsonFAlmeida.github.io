@@ -1,6 +1,8 @@
 const mainSection = document.querySelector('main section');
 const asideSection = document.querySelector('aside section');
 const totalCarrinho = document.querySelector('aside p span');
+const search = document.querySelector('#search')
+let listaProdutos = [];
 let lista = [];
 
 if (!localStorage.getItem('lista')) {
@@ -56,7 +58,7 @@ function adicionarProdutos(produto) {
 }
 
 function carregarProdutos() {
-    produtos.forEach(produto => {
+    listaProdutos.forEach(produto => {
         const article = document.createElement('article');
 
         const title = document.createElement('h3');
@@ -92,7 +94,25 @@ function carregarProdutos() {
     });
 }
 
+function pedirProdutos() {
+    fetch('https://deisishop.pythonanywhere.com/products/')
+    .then(response => response.json())
+    .then(produtos => 
+        produtos.forEach(produto => {
+            listaProdutos.push(produto)
+        })
+    )
+    .catch(error => console.error('Error:',error))
+}
+
+function procurar() {
+    document.getElementById(search).innerHTML = ""; 
+    //filtrar no array
+
+}
+
 document.addEventListener('DOMContentLoaded', () => {
+    pedirProdutos();
     carregarProdutos();
     lista.forEach((produto) => {
         adicionarProdutos(produto)
@@ -100,3 +120,5 @@ document.addEventListener('DOMContentLoaded', () => {
     atualizarTotal()
     
 });
+
+search.addEventListener('change',procurar())
