@@ -64,6 +64,13 @@ aside section {
     color: black;
 }
 
+aside p {
+    font-size: larger;
+    text-align: center;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
 footer {
     background-color: lightgray;
 }
