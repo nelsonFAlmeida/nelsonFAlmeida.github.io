@@ -10,67 +10,115 @@ header {
     color: white;
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    padding: 1rem;
 }
 
 header nav a {
     color: white;
     text-decoration: none;
-    font-size: large;
+    font-size: 1.2rem;
     font-weight: bold;
+    padding: 0.5rem;
+}
+
+main h2 {
+    margin-bottom: 1rem;
 }
 
 main {
     background-color: lightgray;
-    padding: 10px;
-    padding-top: 0px;
+    padding: 1rem;
+}
+
+#filtros {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+#filtros select,
+#filtros input[type="text"] {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
 section {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-row-gap: 10px;
-    grid-column-gap: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
+    grid-template-columns: repeat(4, minmax(150px, 1fr));
+    gap: 1rem;
 }
 
 section article {
     background-color: white;
-    padding: 10px;
-    border-radius: 8px 8px 8px 8px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 section img {
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    height: auto;
 }
 
-h2 {
-    text-align: center;
-    padding: 10px;
+section article h3 {
+    margin: 1rem;
+}
+
+section article p {
+    margin: 0 1rem 1rem 1rem;
+}
+
+section article button {
+    background-color: darkcyan;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 aside {
     background-color: darkcyan;
     color: white;
+    padding: 1rem;
+}
+
+aside h2 {
+    margin-bottom: 1rem;
 }
 
 aside section {
-    padding-bottom: 10px;
     color: black;
+    margin-bottom: 1rem;
 }
 
 aside p {
-    font-size: larger;
+    font-size: 1.2rem;
     text-align: center;
-    padding-bottom: 10px;
+    margin-bottom: 1rem;
     font-weight: bold;
+}
+
+aside input[type="checkbox"],
+aside input[type="text"] {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+aside button {
+    background-color: white;
+    color: darkcyan;
+    border: 1px solid darkcyan;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 footer {
     background-color: lightgray;
+    text-align: center;
+    padding: 1rem;
 }

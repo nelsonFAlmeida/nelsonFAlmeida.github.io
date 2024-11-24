@@ -11,23 +11,45 @@
         <h1>Loja</h1>
         <nav>
             <a href="#produtos">Produtos</a>
-            <a href="#carrinho">Carrinho</a>
+            <a href="#cesto">Carrinho</a>
         </nav>
     </header>
     <main id="produtos">
+        <div id="filtros">
+        <p>Filtrar</p>
+        <select name="filtrar" id="filtrar">
+        </select>
+        <p>Ordenar</p>
+        <select name="sort" id="sort">
+            <option value="default" selected>Ordenar pelo preço</option>
+            <option value="decrescente">Preço Decrescente</option>
+            <option value="crescente">Preço Crescente</option>
+        </select>
+        <p>Search</p>
         <input type="text" id="search">
+        </div>
         <h2>Selecione os seus produtos</h2>
         <section></section>
     </main>
-    <aside id="carrinho">
+    <aside>
         <h2>Produtos Selecionados</h2>
-        <section></section>
-        <p>Total: <span></span></p>
+        <section id="cesto"></section>
+        <div id="resumo">
+            <p id="custo-total">Custo Total: 0.00 €</p>
+            <label>
+                <input type="checkbox" id="desconto-estudante"> És estudante do DEISI?
+            </label>
+            <label>
+                Cupão de desconto <input type="text">
+            </label>
+            <button id="comprar">Comprar</button>
+            <p id="valor-final"></p>
+            <p id="referencia-pagamento"></p>
+        </div>
     </aside>
     <footer>
         <h2>2024</h2>
     </footer>
-    <script src="produtos.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
