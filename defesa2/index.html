@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css" />
     <title>Loja</title>
 </head>
+
 <body>
     <header>
         <h1>Loja</h1>
@@ -16,17 +18,19 @@
     </header>
     <main id="produtos">
         <div id="filtros">
-        <p>Filtrar</p>
-        <select name="filtrar" id="filtrar">
-        </select>
-        <p>Ordenar</p>
-        <select name="sort" id="sort">
-            <option value="default" selected>Ordenar pelo preço</option>
-            <option value="decrescente">Preço Decrescente</option>
-            <option value="crescente">Preço Crescente</option>
-        </select>
-        <p>Search</p>
-        <input type="text" id="search">
+            <button id="adicionarTodosAoCarrinho">adicionarTodosAoCarrinho</button>
+            <button id="carregarProdutosSemDesc">carregarProdutosSemDesc</button>
+            <p>Filtrar</p>
+            <select name="filtrar" id="filtrar">
+            </select>
+            <p>Ordenar</p>
+            <select name="sort" id="sort">
+                <option value="default" selected>Ordenar pelo Rating</option>
+                <option value="decrescente">Rating Decrescente</option>
+                <option value="crescente">Rating Crescente</option>
+            </select>
+            <p>Search</p>
+            <input type="text" id="search">
         </div>
         <h2>Selecione os seus produtos</h2>
         <section></section>
@@ -42,9 +46,13 @@
             <label>
                 Cupão de desconto <input type="text">
             </label>
+            <label>
+                nome <input type="name">
+            </label>
             <button id="comprar">Comprar</button>
             <p id="valor-final"></p>
             <p id="referencia-pagamento"></p>
+            <p id="message"></p>
         </div>
     </aside>
     <footer>
@@ -52,4 +60,5 @@
     </footer>
     <script src="main.js"></script>
 </body>
+
 </html>

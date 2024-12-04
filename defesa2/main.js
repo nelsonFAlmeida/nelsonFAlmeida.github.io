@@ -4,6 +4,8 @@ const totalCarrinho = document.querySelector('#custo-total');
 const search = document.querySelector('#search');
 const sort = document.querySelector('#sort');
 const filtrar = document.querySelector('#filtrar');
+const adicionarTodosAoCarrinhoButton = document.querySelector('#adicionarTodosAoCarrinho');
+const carregarProdutosSemDescButton = document.querySelector('#carregarProdutosSemDesc');
 
 let listaProdutos = [];
 let listaCategories = [];
@@ -42,6 +44,38 @@ function carregarProduto(produto, container, buttonText, buttonCallback) {
     description.textContent = produto.description;
     article.append(description);
 
+    const rating = document.createElement('p');
+    price.textContent = "Rating: " + produto.rating.rate;
+    article.append(rating);
+
+    const button = document.createElement('button');
+    button.textContent = buttonText;
+    button.addEventListener('click', () => buttonCallback(produto, article));
+    article.append(button);
+
+    container.append(article);
+}
+
+
+function carregarProdutoSemDesc(produto, container, buttonText, buttonCallback) {
+    const article = document.createElement('article');
+
+    const title = document.createElement('h3');
+    title.textContent = produto.title;
+    article.append(title);
+
+    const image = document.createElement('img');
+    image.src = produto.image;
+    article.append(image);
+
+    const price = document.createElement('p');
+    price.textContent = "Preço: " + produto.price + " €";
+    article.append(price);
+
+    const rating = document.createElement('p');
+    price.textContent = "Rating: " + produto.rating.rate;
+    article.append(rating);
+
     const button = document.createElement('button');
     button.textContent = buttonText;
     button.addEventListener('click', () => buttonCallback(produto, article));
@@ -58,6 +92,13 @@ function adicionarAoCarrinho(produto) {
     atualizarTotal();
 }
 
+function adicionarTodosAoCarrinho() {
+    listaProdutos.forEach((produto) =>
+        adicionarAoCarrinho(produto)
+    );
+
+}
+
 function removerDoCarrinho(produto, article) {
     article.remove();
     let array = JSON.parse(localStorage.getItem('lista'));
@@ -71,6 +112,13 @@ function carregarProdutos(lista = listaProdutos) {
     mainSection.innerHTML = "";
     lista.forEach((produto) =>
         carregarProduto(produto, mainSection, "+ Adicionar ao carrinho", adicionarAoCarrinho)
+    );
+}
+
+function carregarProdutosSemDesc(lista = listaProdutos) {
+    mainSection.innerHTML = "";
+    listaProdutos.forEach((produto) =>
+        carregarProdutoSemDesc(produto, mainSection, "+ Adicionar ao carrinho", adicionarAoCarrinho)
     );
 }
 
@@ -123,7 +171,8 @@ function filtrarProdutos() {
 function procurar() {
     const termo = search.value.toLowerCase();
     const listaFiltrada = listaProdutos.filter((produto) =>
-        produto.title.toLowerCase().includes(termo)
+        (produto.title.toLowerCase().includes(termo) || produto.description.toLowerCase().includes(termo) )
+
     );
     carregarProdutos(listaFiltrada);
 }
@@ -134,9 +183,9 @@ function Ordenar() {
     let listaCopia = [...listaProdutos];
 
     if (valor === "crescente") {
-        listaCopia.sort((a, b) => a.price - b.price);
+        listaCopia.sort((a, b) => a.rating.rate - b.rating.rate);
     } else if (valor === "decrescente") {
-        listaCopia.sort((a, b) => b.price - a.price);
+        listaCopia.sort((a, b) => b.rating.rate - a.rating.rate);
     }
 
     carregarProdutos(listaCopia);
@@ -154,11 +203,15 @@ document.addEventListener('DOMContentLoaded', () => {
 search.addEventListener('input', procurar);
 sort.addEventListener('change', Ordenar);
 filtrar.addEventListener('change', filtrarProdutos);
+adicionarTodosAoCarrinhoButton.addEventListener('click', adicionarTodosAoCarrinho);
+carregarProdutosSemDescButton.addEventListener('click', carregarProdutosSemDesc);
 
 document.querySelector('#comprar').addEventListener('click', () => {
     const total = parseFloat(totalCarrinho.textContent.replace('Custo Total: ', '').replace(' €', ''));
     const descontoEstudante = document.querySelector('#desconto-estudante').checked;
+
     const cupao = document.querySelector('input[type="text"]').value;
+    const name = document.querySelector('input[type="name"]').value;
 
     const listaProdutos = JSON.parse(localStorage.getItem('lista'));
 
@@ -172,6 +225,7 @@ document.querySelector('#comprar').addEventListener('click', () => {
         products: listaProdutos.map((produto) => produto.id),
         student: descontoEstudante,
         coupon: cupao || null,
+        name: name || null,
     };
 
     fetch('https://deisishop.pythonanywhere.com/buy/', {
@@ -190,6 +244,8 @@ document.querySelector('#comprar').addEventListener('click', () => {
         .then((data) => {
             document.querySelector('#valor-final').textContent = `Valor Final: ${data.totalCost} €`;
             document.querySelector('#referencia-pagamento').textContent = `Referência de Pagamento: ${data.reference}`;
+            document.querySelector('#message').textContent = `Message: ${data.message}`;
+            
         })
         .catch((error) => {
             console.error('Erro:', error);
