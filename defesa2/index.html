@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Loja</title>
+</head>
+<body>
+    <header>
+        <h1>Loja</h1>
+        <nav>
+            <a href="#produtos">Produtos</a>
+            <a href="#cesto">Carrinho</a>
+        </nav>
+    </header>
+    <main id="produtos">
+        <div id="filtros">
+        <p>Filtrar</p>
+        <select name="filtrar" id="filtrar">
+        </select>
+        <p>Ordenar</p>
+        <select name="sort" id="sort">
+            <option value="default" selected>Ordenar pelo preço</option>
+            <option value="decrescente">Preço Decrescente</option>
+            <option value="crescente">Preço Crescente</option>
+        </select>
+        <p>Search</p>
+        <input type="text" id="search">
+        </div>
+        <h2>Selecione os seus produtos</h2>
+        <section></section>
+    </main>
+    <aside>
+        <h2>Produtos Selecionados</h2>
+        <section id="cesto"></section>
+        <div id="resumo">
+            <p id="custo-total">Custo Total: 0.00 €</p>
+            <label>
+                <input type="checkbox" id="desconto-estudante"> És estudante do DEISI?
+            </label>
+            <label>
+                Cupão de desconto <input type="text">
+            </label>
+            <button id="comprar">Comprar</button>
+            <p id="valor-final"></p>
+            <p id="referencia-pagamento"></p>
+        </div>
+    </aside>
+    <footer>
+        <h2>2024</h2>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
